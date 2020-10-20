@@ -13,7 +13,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: $yellowLight;
   color: $black;
-  height: 100vh;
+  height: auto;
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -149,7 +149,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 99vh;
+  height: auto;
   width: 99%;
   margin: 0;
   padding: 0;
