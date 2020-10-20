@@ -9,7 +9,7 @@ function End() {
       <img src={imagen2} className={styles.img} title="Imagen 2" alt="Imagen 2" />
       <p className={styles.text}>Gracias por utilizar la App</p>
       <div className={styles.conatainerFooter}>
-        <p className={styles.text}>Leonardo Gerbacio Romero © 2020</p>
+        <a href="https://www.linkedin.com/in/leonardo-gerbacio-romero/" target="blank" className={styles.text}>Leonardo Gerbacio Romero © 2020</a>
       </div>
     </div>
   );

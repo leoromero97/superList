@@ -48,10 +48,7 @@ class Home extends React.Component {
         <div className={styles.containerHome}>
         <Header />
         <img id="home" src={imagen1} className={styles.logo} title="Imagen 1" alt="Imagen 1" />
-        <h2 className={styles.subTitle}>Lista:</h2>
-        <p>Total de productos: <span className={styles.text}>{this.state.items.length}</span> </p>
-        <TodoList items={this.state.items} />
-          <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
             <p className={styles.text} htmlFor="new-todo">
             ¿Qué necesitas comprar?
             </p>
@@ -62,9 +59,14 @@ class Home extends React.Component {
                 <button className={styles.buttonPrimary}> <span>AGREGAR</span></button>
               </div>
           </form>
-  
+        <p>Total de productos: <span className={styles.text}>{this.state.items.length}</span> </p>
+        <h2 className={styles.subTitle}>Lista:</h2>
+        <div className={styles.container2}>
+          <TodoList items={this.state.items} />
+        </div>
           <div className={styles.container2}>
              <button className={styles.buttonDelete} onClick={this.onClick}> <span>ELIMINAR</span></button>
+             <p className={styles.text}>Vas comprando, vas eliminando</p>
           </div>
           <div className={styles.conatainerFooter}>
           <End />
